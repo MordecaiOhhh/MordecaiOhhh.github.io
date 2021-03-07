@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
 
-$r : 45px;  // glow radius
-$o : 20px;  // glow offset
+$r : 2%;  // glow radius
+$o : 1%;  // glow offset
 $d : 2s;    // duration
 $chars : 7; // # of letters
 $bg : rgb(12, 10, 21); // background color
@@ -10,8 +10,8 @@ $c : rgb(255, 0, 183) rgb(248, 193, 90) rgb(255, 234, 71);
 $z : rgb(255, 248, 54) rgb(85, 0, 255) rgb(245, 79, 50);
 
 body {
-	font: 4vw/1 'Caveat', cursive;
-	display: flex;
+	font: 26px/1 'Caveat', cursive;
+	display: flex; 
 	align-items: center;
 	justify-content: center;
     flex-flow: wrap;
