@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+    
+    <audio autoplay id="myaudio">
+        <source src="music.mp3">
+      </audio>
+      
+    <script>
+        var audio = document.getElementById("myaudio");
+        audio.volume = 0.2;
+    </script>
+
+    <div id="line-one">
+ 
+    </div>
+    <!-- <div class="no">
+        <span>Ж</span>
+        <span>а</span>
+        <span>н</span>
+        <span>ы</span>
+        <span>м</span>
+    </div>
+    <div class="no">
+        <span>Ж</span>
+        <span>а</span>
+        <span>н</span>
+        <span>ы</span>
+        <span>м</span>
+    </div>
+
+    <div class="no">
+        <span>Z</span>
+        <span>h</span>
+        <span>a</span>
+        <span>n</span>
+        <span>y</span>
+        <span>m</span>
+    </div> -->
+</body>
+
+<script>
+
+    
+
+    // $("#line-one").ready(function () {
+    //     var text = "Зяяяяным, поздравляю тебя с твоим праздником!";
+    //     var a = "";
+    //     for (var i in text) {
+    //         a += "<span>"+text[i]+"</span>";
+    //     }
+
+    //     console.log(a)
+    // });
+
+    $(function(){
+        $("#line-one").typed({
+            strings: [
+                "<span>Зяяяяным, поздравляю тебя с твоим праздником!</span>", 
+                
+                "<span>Спасибо тебе что ты есть!</span>",
+
+                "<span>И я очень счастлив что ты есть у меня!</span>",
+
+                "<span>Спасибо что даришь улыбку и делаешь меня самым счастливым человеком!</span>",
+
+                // "Прости что так получилось и ты не вдыхаешь нежный аромат красных роз(",
+
+                "<span>Спасибо что держишься меня, в моменты когда я говорю 23:00)))</span>",
+
+                "<span>Ты самый прекрасный человек!</span>",
+                    
+                "<span>Cамая красивая и самая самая самая добрая!!!</span>",
+
+                "<span>Зяяяяным, ты лучик солнца в этом мире!</span>",
+                
+                "<span>Греешь и освещаешь душу!</span>",
+
+                "<span>Твои прекрасные глаза</span>",
+                "<span>Аромат твоих волос</span>",
+                "<span>Твой прекрасный голос и нежность после 'Fa'</span>",
+
+                "<span>Запоминаю каждое мгновение проведенное с тобой!</span>",
+
+                "<span>Прогулка по Чагану* Походы в кофейни*</span>",
+
+                "<span>Вечера кино и нежность которую ты даришь!</span>",
+
+                "<span>Спасибо тебе за все все все!</span>",
+
+                "<span>Я ооочень очень очень сильно люблю тебя!</span>",
+
+                "<span>Любимая! Поздравляю тебя с 8 марта!</span>",
+
+                
+            ],
+            typeSpeed: 100,
+            contentType: 'html',
+            loop:false
+        });
+    });
+
+    
+
+</script>
+</html>

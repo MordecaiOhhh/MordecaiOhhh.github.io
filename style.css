@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap");
+.no {
+  width: 100%;
+}
+
+body {
+  font: 4vw/1 'Caveat', cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  height: 100vh;
+  text-align: center;
+  background: #111;
+  color: snow;
+}
+
+body .no {
+  width: 100%;
+  margin-top: -120px;
+}
+
+body .no:first-of-type {
+  margin-top: 99px !important;
+}
+
+body #line-one {
+  max-width: 100%;
+}
+
+.typed-cursor {
+  -webkit-animation: glowN 2s ease-in-out both infinite;
+          animation: glowN 2s ease-in-out both infinite;
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+.typed-cursor:nth-child(1) {
+  -webkit-animation-delay: -0.28571s;
+          animation-delay: -0.28571s;
+}
+
+.typed-cursor:nth-child(2) {
+  -webkit-animation-delay: -0.57143s;
+          animation-delay: -0.57143s;
+}
+
+.typed-cursor:nth-child(3) {
+  -webkit-animation-delay: -0.85714s;
+          animation-delay: -0.85714s;
+}
+
+.typed-cursor:nth-child(4) {
+  -webkit-animation-delay: -1.14286s;
+          animation-delay: -1.14286s;
+}
+
+.typed-cursor:nth-child(5) {
+  -webkit-animation-delay: -1.42857s;
+          animation-delay: -1.42857s;
+}
+
+.typed-cursor:nth-child(6) {
+  -webkit-animation-delay: -1.71429s;
+          animation-delay: -1.71429s;
+}
+
+.typed-cursor:nth-child(7) {
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+span {
+  -webkit-animation: glow 2s ease-in-out both infinite;
+          animation: glow 2s ease-in-out both infinite;
+}
+
+span:nth-child(1) {
+  -webkit-animation-delay: -0.28571s;
+          animation-delay: -0.28571s;
+}
+
+span:nth-child(2) {
+  -webkit-animation-delay: -0.57143s;
+          animation-delay: -0.57143s;
+}
+
+span:nth-child(3) {
+  -webkit-animation-delay: -0.85714s;
+          animation-delay: -0.85714s;
+}
+
+span:nth-child(4) {
+  -webkit-animation-delay: -1.14286s;
+          animation-delay: -1.14286s;
+}
+
+span:nth-child(5) {
+  -webkit-animation-delay: -1.42857s;
+          animation-delay: -1.42857s;
+}
+
+span:nth-child(6) {
+  -webkit-animation-delay: -1.71429s;
+          animation-delay: -1.71429s;
+}
+
+span:nth-child(7) {
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+}
+
+@-webkit-keyframes glowN {
+  0%, 100% {
+    text-shadow: 0 0 7.5px snow, 0 -20px 45px #f54f32, -20px 20px 45px #5500ff, 20px 20px 45px #f54f32;
+  }
+  33% {
+    text-shadow: 0 0 7.5px snow, 0 -20px 45px #fff836, -20px 20px 45px #ffea47, 20px 20px 45px #fff836;
+  }
+  66% {
+    text-shadow: 0 0 7.5px snow, 0 -20px 45px #5500ff, -20px 20px 45px #fff836, 20px 20px 45px #5500ff;
+  }
+}
+
+@keyframes glowN {
+  0%, 100% {
+    text-shadow: 0 0 7.5px snow, 0 -20px 45px #f54f32, -20px 20px 45px #5500ff, 20px 20px 45px #f54f32;
+  }
+  33% {
+    text-shadow: 0 0 7.5px snow, 0 -20px 45px #fff836, -20px 20px 45px #ffea47, 20px 20px 45px #fff836;
+  }
+  66% {
+    text-shadow: 0 0 7.5px snow, 0 -20px 45px #5500ff, -20px 20px 45px #fff836, 20px 20px 45px #5500ff;
+  }
+}
+
+@-webkit-keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 7.5px snow, 0 -20px 45px #ffea47, -20px 20px 45px #f8c15a, 20px 20px 45px #ffea47;
+  }
+  33% {
+    text-shadow: 0 0 7.5px snow, 0 -20px 45px #ff00b7, -20px 20px 45px #ffea47, 20px 20px 45px #ff00b7;
+  }
+  66% {
+    text-shadow: 0 0 7.5px snow, 0 -20px 45px #f8c15a, -20px 20px 45px #ff00b7, 20px 20px 45px #f8c15a;
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 7.5px snow, 0 -20px 45px #ffea47, -20px 20px 45px #f8c15a, 20px 20px 45px #ffea47;
+  }
+  33% {
+    text-shadow: 0 0 7.5px snow, 0 -20px 45px #ff00b7, -20px 20px 45px #ffea47, 20px 20px 45px #ff00b7;
+  }
+  66% {
+    text-shadow: 0 0 7.5px snow, 0 -20px 45px #f8c15a, -20px 20px 45px #ff00b7, 20px 20px 45px #f8c15a;
+  }
+}
+/*# sourceMappingURL=style.css.map */
