@@ -1,10 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap");
-.no {
-  width: 100%;
+.playGuitar {
+  width: 60px;
+  height: 60px;
+  background: url("play.svg");
+  background-position: center;
+  background-size: cover;
+  border: none;
+  position: absolute;
+  left: 48%;
+  bottom: 26%;
+  display: none;
+}
+
+.playGuitar span {
+  position: absolute;
+  left: -60px;
+  bottom: -110px;
+  font-size: 36px;
+}
+
+canvas {
+  padding: 0;
+  margin: 0;
+}
+
+div.btnbg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  -webkit-box-shadow: 0px 0px 15px #ccc;
+          box-shadow: 0px 0px 15px #ccc;
+}
+
+div.btnbg:hover {
+  text-shadow: 0px 0px 3px #ccc;
+  -webkit-box-shadow: 0px 0px 20px #ccc;
+          box-shadow: 0px 0px 20px #ccc;
+}
+
+#noch {
+  position: absolute;
+  top: 77%;
+  opacity: 0.07;
+  display: none;
 }
 
 body {
-  font: 4vw/1 'Caveat', cursive;
+  font: 64px/1 'Caveat', cursive;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,29 +60,23 @@ body {
       flex-flow: wrap;
   height: 100vh;
   text-align: center;
-  background: #111;
+  background: #0c0a15;
   color: snow;
 }
 
-body .no {
-  width: 100%;
-  margin-top: -120px;
-}
-
-body .no:first-of-type {
-  margin-top: 99px !important;
-}
-
 body #line-one {
-  max-width: 100%;
+  position: absolute;
+  min-width: 100%;
+  height: 0;
 }
 
 .typed-cursor {
+  display: none;
   -webkit-animation: glowN 2s ease-in-out both infinite;
           animation: glowN 2s ease-in-out both infinite;
   opacity: 1;
-  -webkit-animation: blink 0.7s infinite;
-  animation: blink 0.7s infinite;
+  -webkit-animation: blink 1  s infinite;
+  animation: blink 1s infinite;
 }
 
 .typed-cursor:nth-child(1) {
@@ -144,49 +180,49 @@ span:nth-child(7) {
 
 @-webkit-keyframes glowN {
   0%, 100% {
-    text-shadow: 0 0 7.5px snow, 0 -20px 45px #f54f32, -20px 20px 45px #5500ff, 20px 20px 45px #f54f32;
+    text-shadow: 0 0 4px snow, 0 -11px 24px #f54f32, -11px 11px 24px #5500ff, 11px 11px 24px #f54f32;
   }
   33% {
-    text-shadow: 0 0 7.5px snow, 0 -20px 45px #fff836, -20px 20px 45px #ffea47, 20px 20px 45px #fff836;
+    text-shadow: 0 0 4px snow, 0 -11px 24px #fff836, -11px 11px 24px #ffea47, 11px 11px 24px #fff836;
   }
   66% {
-    text-shadow: 0 0 7.5px snow, 0 -20px 45px #5500ff, -20px 20px 45px #fff836, 20px 20px 45px #5500ff;
+    text-shadow: 0 0 4px snow, 0 -11px 24px #5500ff, -11px 11px 24px #fff836, 11px 11px 24px #5500ff;
   }
 }
 
 @keyframes glowN {
   0%, 100% {
-    text-shadow: 0 0 7.5px snow, 0 -20px 45px #f54f32, -20px 20px 45px #5500ff, 20px 20px 45px #f54f32;
+    text-shadow: 0 0 4px snow, 0 -11px 24px #f54f32, -11px 11px 24px #5500ff, 11px 11px 24px #f54f32;
   }
   33% {
-    text-shadow: 0 0 7.5px snow, 0 -20px 45px #fff836, -20px 20px 45px #ffea47, 20px 20px 45px #fff836;
+    text-shadow: 0 0 4px snow, 0 -11px 24px #fff836, -11px 11px 24px #ffea47, 11px 11px 24px #fff836;
   }
   66% {
-    text-shadow: 0 0 7.5px snow, 0 -20px 45px #5500ff, -20px 20px 45px #fff836, 20px 20px 45px #5500ff;
+    text-shadow: 0 0 4px snow, 0 -11px 24px #5500ff, -11px 11px 24px #fff836, 11px 11px 24px #5500ff;
   }
 }
 
 @-webkit-keyframes glow {
   0%, 100% {
-    text-shadow: 0 0 7.5px snow, 0 -20px 45px #ffea47, -20px 20px 45px #f8c15a, 20px 20px 45px #ffea47;
+    text-shadow: 0 0 4px snow, 0 -11px 24px #ffea47, -11px 11px 24px #f8c15a, 11px 11px 24px #ffea47;
   }
   33% {
-    text-shadow: 0 0 7.5px snow, 0 -20px 45px #ff00b7, -20px 20px 45px #ffea47, 20px 20px 45px #ff00b7;
+    text-shadow: 0 0 4px snow, 0 -11px 24px #ff00b7, -11px 11px 24px #ffea47, 11px 11px 24px #ff00b7;
   }
   66% {
-    text-shadow: 0 0 7.5px snow, 0 -20px 45px #f8c15a, -20px 20px 45px #ff00b7, 20px 20px 45px #f8c15a;
+    text-shadow: 0 0 4px snow, 0 -11px 24px #f8c15a, -11px 11px 24px #ff00b7, 11px 11px 24px #f8c15a;
   }
 }
 
 @keyframes glow {
   0%, 100% {
-    text-shadow: 0 0 7.5px snow, 0 -20px 45px #ffea47, -20px 20px 45px #f8c15a, 20px 20px 45px #ffea47;
+    text-shadow: 0 0 4px snow, 0 -11px 24px #ffea47, -11px 11px 24px #f8c15a, 11px 11px 24px #ffea47;
   }
   33% {
-    text-shadow: 0 0 7.5px snow, 0 -20px 45px #ff00b7, -20px 20px 45px #ffea47, 20px 20px 45px #ff00b7;
+    text-shadow: 0 0 4px snow, 0 -11px 24px #ff00b7, -11px 11px 24px #ffea47, 11px 11px 24px #ff00b7;
   }
   66% {
-    text-shadow: 0 0 7.5px snow, 0 -20px 45px #f8c15a, -20px 20px 45px #ff00b7, 20px 20px 45px #f8c15a;
+    text-shadow: 0 0 4px snow, 0 -11px 24px #f8c15a, -11px 11px 24px #ff00b7, 11px 11px 24px #f8c15a;
   }
 }
 /*# sourceMappingURL=style.css.map */

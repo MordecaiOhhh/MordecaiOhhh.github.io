@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
 
-$r : 2%;  // glow radius
-$o : 1%;  // glow offset
+$r : 24px;  // glow radius
+$o : 11px;  // glow offset
 $d : 2s;    // duration
 $chars : 7; // # of letters
 $bg : rgb(12, 10, 21); // background color
@@ -9,8 +9,48 @@ $bg : rgb(12, 10, 21); // background color
 $c : rgb(255, 0, 183) rgb(248, 193, 90) rgb(255, 234, 71);
 $z : rgb(255, 248, 54) rgb(85, 0, 255) rgb(245, 79, 50);
 
+.playGuitar {
+		width: 60px;
+	height: 60px;
+	background	: url('play.svg') ;
+	background-position: center;
+	background-size: cover;
+	border: none;
+	position: absolute;
+	left:48%;
+	bottom: 26%;
+	display: none;
+	span {
+		position: absolute;
+		left: -60px; 
+		bottom: -110px;
+		font-size: 36px;
+	}
+}
+
+canvas {
+    padding:0;
+    margin:0;
+}
+div.btnbg {
+    position:fixed;
+    left:0;
+    top:0;
+    box-shadow: 0px 0px 15px #ccc;
+}
+div.btnbg:hover{
+    text-shadow: 0px 0px 3px #ccc;
+    box-shadow: 0px 0px 20px #ccc;
+}
+
+#noch {
+	position: absolute;
+    top: 77%;
+    opacity: 0.07;
+	display: none;
+}
 body {
-	font: 26px/1 'Caveat', cursive;
+	font: 64px/1 'Caveat', cursive;
 	display: flex; 
 	align-items: center;
 	justify-content: center;
@@ -20,9 +60,14 @@ body {
 	background: $bg;
 	color: snow;
 
-
+	#line-one {
+		position: absolute;
+		min-width: 100%;
+		height: 0;
+	}
 }
 .typed-cursor {
+	display: none;
 
     animation: glowN $d ease-in-out both infinite;	
     opacity: 1;
@@ -37,19 +82,19 @@ body {
 	}
 }
 @keyframes blink{
-    0% { opacity:1; @include glowN(nth($z, 1), nth($z, 2), nth($z, 3));	}
-    50% { opacity:0; @include glowN(nth($z, 2), nth($c, 3), nth($z, 1));}
-    100% { opacity:1; @include glowN(nth($z, 1), nth($z, 2), nth($z, 3));	}
+    0% { opacity:1; 	}
+    50% { opacity:0;}
+    100% { opacity:1; }
 }
 @-webkit-keyframes blink{
-    0% { opacity:1; @include glowN(nth($z, 1), nth($z, 2), nth($z, 3));	}
-    50% { opacity:0; @include glowN(nth($z, 2), nth($c, 3), nth($z, 1));}
-    100% { opacity:1; @include glowN(nth($z, 1), nth($z, 2), nth($z, 3));	}
+    0% { opacity:1; 	}
+    50% { opacity:0;}
+    100% { opacity:1; }
 }
 @-moz-keyframes blink{
-    0% { opacity:1; @include glowN(nth($z, 1), nth($z, 2), nth($z, 3));	}
-    50% { opacity:0; @include glowN(nth($z, 2), nth($c, 3), nth($z, 1));}
-    100% { opacity:1; @include glowN(nth($z, 1), nth($z, 2), nth($z, 3));	}
+    0% { opacity:1; 	}
+    50% { opacity:0;}
+    100% { opacity:1; }
 }
 span {
 	animation: glow $d ease-in-out both infinite;	
